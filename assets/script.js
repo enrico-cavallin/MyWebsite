@@ -122,15 +122,3 @@ if (resBtn) {
   // Update button whenever language changes
   document.addEventListener("langChanged", updateResButton);
 }
-
-window.addEventListener("load", () => {
-  const scrollPrompt = document.querySelector(".scroll-prompt");
-  if (scrollPrompt) {
-    // Force a tiny reflow + fade-in to fix Safari rendering
-    scrollPrompt.style.opacity = "0";
-    setTimeout(() => {
-      scrollPrompt.style.transition = "opacity 0.6s ease";
-      scrollPrompt.style.opacity = "1";
-    }, 200); // slight delay to let viewport settle
-  }
-});
