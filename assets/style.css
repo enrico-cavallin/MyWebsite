@@ -257,6 +257,7 @@ button.lang-btn:hover {
 
 .footer p {
     font-family: 'Cascadia Code', sans-serif;
+    font-weight: 500;
     color: rgb(0, 2, 36);
     font-size: 0.9rem;
     margin-bottom: 20px;
