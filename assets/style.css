@@ -1,0 +1,253 @@
+/* ====== Global Styles ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(0, 28, 52), rgb(0, 42, 52));
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* ====== Header ====== */
+header {
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+}
+
+header h1 {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-family: 'Cascadia Code Light', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* ====== Navbar ====== */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 70px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 0.8s ease forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-btn {
+    background: rgba(0, 28, 52, 0.603);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Cascadia Code Light', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#nav-home-btn {
+    background: rgba(0, 28, 52, 0.815)
+}
+
+#nav-home-btn:hover {
+    background: rgba(0, 28, 52);
+    transform: scale(1.05);
+}
+
+.nav-btn:hover {
+    background: rgba(0, 28, 52);
+    transform: scale(1.05);
+}
+
+.topbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    flex-wrap: wrap;          
+    gap: 10px;                
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .downloads-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer {
+        font-size: 0.8rem;
+        padding: 12px 10px;
+    }
+}
+
+/* === Scroll Arrow === */
+.scroll-prompt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.scroll-prompt p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-family: 'Cascadia Code Light', sans-serif;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-down {
+    font-size: 2rem;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+    transition: opacity 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* === More about me === */
+.more-about-me {
+    height: 100vh;
+    flex: 1;
+    background: linear-gradient(45deg, rgb(0, 28, 52), rgb(0, 42, 52));
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-about-me p {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.quick-downloads-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.downloads-card {
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.205);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.download-btn {
+    background: rgba(0, 28, 52, 0.603);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Cascadia Code Light', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+    background: rgba(0, 28, 52);
+    transform: scale(1.05);
+}
+
+/* ====== Lang Button ====== */
+button.lang-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffffff;
+    color: rgb(0, 2, 36);
+    border: none;
+    padding: 30px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 1000;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.562);
+
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button.lang-btn:hover {
+    background: rgb(247, 251, 255);
+    transform: scale(1.05);
+}
+
+/* ====== Copyright Notice ====== */
+.footer {
+    text-align: center;
+    width:100%;
+    padding: 15px 10px;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.205);
+}
+
+.footer p {
+    font-family: 'Cascadia Code', sans-serif;
+    color: rgb(0, 2, 36);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}

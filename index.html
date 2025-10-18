@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home | Cavallin Enrico</title>
+        <link rel="stylesheet" href="assets/style.css" />
+        <script src="assets/script.js" defer></script>
+
+        <!-- AOS Animation Library -->
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-content">
+                <header>
+                    <h1 data-aos="fade-down">Cavallin Enrico</h1>
+                    <p data-aos="fade-down" data-en="Aspiring Software Developer" data-it="Aspirante Sviluppatore di Software"></p>
+                </header>
+                <nav class="topbar">
+                    <button class="nav-btn" onclick="window.location.href='index.html'" id="nav-home-btn">HOME</button>
+                    <button class="nav-btn" onclick="window.location.href='work.html'" data-en="Working experience" data-it="Esperienza lavorativa"></button>
+                    <button class="nav-btn" onclick="window.location.href='education.html'" data-en="Education" data-it="Istruzione"></button>
+                    <button class="nav-btn" onclick="window.location.href='skills.html'" data-en="Skills" data-it="Competenze"></button>
+                    <button class="nav-btn" onclick="window.location.href='certificates.html'" data-en="Certificates" data-it="Certificati"></button>
+                    <button class="nav-btn" onclick="window.location.href='projects.html'" data-en="Projects" data-it="Progetti"></button>
+                    <button class="nav-btn" onclick="window.location.href='downloads.html'" data-en="My Documents" data-it="Documenti"></button>
+                </nav>
+
+                <div class="scroll-prompt">
+                    <p data-aos="fade-down" data-en="Find out more about me" data-it="Scopri di piu su di me"></p>
+                    <div class="scroll-down" id="scrollArrow">&#x25BC;</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="more-about-me">
+            <p data-aos="fade-down" data-en="Video introduction" data-it="Video di introduzione"></p>
+            <!-- Embedded video introduction in iframe -->
+            
+            <section class="quick-downloads-section" data-aos="fade-up">
+                <div class="downloads-card">
+                    <button class="download-btn" id="download-CV-qb" data-en="Download my CV" data-it="Scarica il mio CV"></button>
+                    <button class="download-btn" id="download-resume-qb" data-en="Download my resume" data-it="Scarica la mia introduzione"></button>
+                </div>
+            </section>
+        </section>
+
+        <section class="footer">
+            <p data-en="&copy; 2025 Cavallin Enrico. All rights reserved." data-it="&copy; 2025 Cavallin Enrico. Tutti i diritti riservati."></p>
+        </section>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            duration: 1000,
+            once: true
+            });
+        </script>
+    </body>
+
+</html>
