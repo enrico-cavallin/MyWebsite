@@ -63,6 +63,7 @@ header p {
     background: white;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     z-index: 1000;
+    margin-bottom: 20px;
 
     display: flex;
     justify-content: center;
