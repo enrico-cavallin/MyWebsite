@@ -36,12 +36,14 @@ header {
 
 header h1 {
     font-family: 'Cascadia Code', sans-serif;
+    font-weight: 700;
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
 header p {
-    font-family: 'Cascadia Code Light 300', sans-serif;
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 300;
     font-size: 1.1rem;
 }
 
@@ -83,7 +85,7 @@ header p {
     padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
-    font-family: 'Cascadia Code Light 300', sans-serif;
+    font-family: 'Cascadia Code', sans-serif;
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 15px;
@@ -141,7 +143,8 @@ header p {
 .scroll-prompt p {
     font-size: 1.1rem;
     margin-bottom: 8px;
-    font-family: 'Cascadia Code Light 300', sans-serif;
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 300;
     animation: bounce 1.5s infinite;
 }
 
@@ -201,7 +204,7 @@ header p {
     padding: 10px 20px;
     border-radius: 15px;
     cursor: pointer;
-    font-family: 'Cascadia Code Light 300', sans-serif;
+    font-family: 'Cascadia Code', sans-serif;
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin: 15px;
