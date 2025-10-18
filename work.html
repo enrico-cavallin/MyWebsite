@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home | Cavallin Enrico</title>
         <link rel="stylesheet" href="assets/style.css" />
-        <script src="assets/script.js" defer></script>
 
         <!-- AOS Animation Library -->
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
@@ -15,8 +14,9 @@
         <section class="hero">
             <div class="hero-content">
                 <header>
-                    <h1 data-aos="fade-down">Cavallin Enrico</h1>
-                    <p data-aos="fade-down" data-en="Aspiring Software Developer" data-it="Aspirante Sviluppatore di Software"></p>
+                    <h2 data-aos="fade-down" data-en="Software Developer" data-it="Sviluppatore di Software"></h2>
+                    <h3 data-aos="fade-down" data-en="1st May, 2025 - Today" data-it="1 Maggio 2025 - Oggi"></h3>
+                    <p data-aos="fade-down" data-en="Aspiring Software \n Developer" data-it="Aspirante Sviluppatore di Software"></p>
                 </header>
                 <nav class="topbar">
                     <button class="nav-btn" onclick="window.location.href='index.html'" id="nav-home-btn">HOME</button>
@@ -28,23 +28,6 @@
                     <button class="nav-btn" onclick="window.location.href='downloads.html'" data-en="My Documents" data-it="Documenti"></button>
                 </nav>
 
-                <div class="scroll-prompt">
-                    <p data-aos="fade-down" data-en="Find out more about me" data-it="Scopri di piu su di me"></p>
-                    <div class="scroll-down" id="scrollArrow">&#x25BC;</div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="more-about-me">
-            <p data-aos="fade-down" data-en="Video introduction" data-it="Video di introduzione"></p>
-            <!-- Embedded video introduction in iframe -->
-            
-            <section class="quick-downloads-section" data-aos="fade-up">
-                <div class="downloads-card">
-                    <button class="download-btn" id="download-CV-qb" data-en="Download my CV" data-it="Scarica il mio CV"></button>
-                    <button class="download-btn" id="download-resume-qb" data-en="Download my resume" data-it="Vai a tutti i documenti"></button>
-                </div>
-            </section>
         </section>
 
         <section class="footer">
@@ -58,6 +41,7 @@
             once: true
             });
         </script>
+        <script src="assets/script.js"></script>
     </body>
 
 </html>

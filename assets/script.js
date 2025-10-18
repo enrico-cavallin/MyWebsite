@@ -12,6 +12,17 @@ function setLanguage(lang) {
     el.textContent = el.getAttribute(`data-${lang}`);
   });
 
+  const elements = document.querySelectorAll('[data-en][data-it]');
+  elements.forEach(el => {
+    const raw = (lang === 'it') ? el.dataset.it : el.dataset.en;
+    if(typeof raw === 'string') {
+      const html = raw.replace(/(?:\\n|\n)/g, "<br>");
+      el.innerHTML = html;
+    }
+  });
+
+  const event = new Event("langChanged");
+  document.dispatchEvent(event);
 }
 
 // Toggle between English and Italian
@@ -98,7 +109,7 @@ if (resBtn) {
     const lang = localStorage.getItem("lang") || "en";
 
     // Set the correct PDF based on language
-    const resFile = lang === "it" ? "assets/downloads/resume_it.pdf" : "assets/downloads/resume_en.pdf";
+    const resFile = lang === "it" ? "../documents.html" : "assets/downloads/resume_en.pdf";
     resBtn.onclick = () => {
       window.location.href = resFile; // triggers download
     };
