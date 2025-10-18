@@ -27,6 +27,12 @@ html {
     padding: 0 20px;
 }
 
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('fonts/CascadiaCode-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
 /* ====== Header ====== */
 header {
     color: white;
