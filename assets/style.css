@@ -140,6 +140,35 @@ header p {
     #start-of-aboutme {
         margin-top: 50%;
     }
+    #start {
+        margin-top: 50%;
+    }
+    #start-of-work {
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .nav-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        margin: 10px;
+    }
+    #start-of-aboutme {
+        margin-top: 70%;
+    }
+    #start {
+        margin-top: 70%;
+    }
+    #start-of-work {
+        margin-top: 70%;
+    }
 }
 
 /* === Scroll Arrow === */
