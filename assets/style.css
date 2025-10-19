@@ -171,6 +171,29 @@ header p {
     }
 }
 
+@media (max-width: 320px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 0.8rem;
+    }
+    .nav-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        margin: 8px;
+    }
+    #start-of-aboutme {
+        margin-top: 100%;
+    }
+    #start {
+        margin-top: 100%;
+    }
+    #start-of-work {
+        margin-top: 100%;
+    }
+}
+
 /* === Scroll Arrow === */
 .scroll-prompt {
     display: flex;
