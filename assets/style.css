@@ -137,13 +137,7 @@ header p {
         font-size: 0.8rem;
         padding: 12px 10px;
     }
-    #start-of-aboutme {
-        margin-top: 50%;
-    }
-    #start {
-        margin-top: 50%;
-    }
-    #start-of-work {
+    .hero {
         margin-top: 50%;
     }
 }
@@ -160,13 +154,7 @@ header p {
         font-size: 0.9rem;
         margin: 10px;
     }
-    #start-of-aboutme {
-        margin-top: 70%;
-    }
-    #start {
-        margin-top: 70%;
-    }
-    #start-of-work {
+    .hero {
         margin-top: 70%;
     }
 }
@@ -183,13 +171,7 @@ header p {
         font-size: 0.8rem;
         margin: 8px;
     }
-    #start-of-aboutme {
-        margin-top: 500px;
-    }
-    #start {
-        margin-top: 100%;
-    }
-    #start-of-work {
+    .hero {
         margin-top: 100%;
     }
 }
