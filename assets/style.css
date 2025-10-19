@@ -137,6 +137,9 @@ header p {
         font-size: 0.8rem;
         padding: 12px 10px;
     }
+    #start-of-aboutme {
+        margin-top: 50%;
+    }
 }
 
 /* === Scroll Arrow === */
@@ -298,7 +301,7 @@ h3 {
 }
 
 #start-of-aboutme {
-    margin-top: 40%;
+    margin-top: 30%;
 }
 
 /* ====== Contacts Section ====== */
