@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Me | Cavallin Enrico</title>
+        <link rel="stylesheet" href="assets/style.css" />
+
+        <!-- AOS Animation Library -->
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    </head>
+    <body>
+        <section class="hero">
+            <header>
+                <h2 data-aos="fade-down" data-en="About me" data-it="Chi sono"></h2>
+                <p id="branding-profile" data-aos="fade-down" data-en="Branding profile" data-it="Breve descrizione"></p>
+                <h2 id="contacts-header" data-aos="fade-up" data-en="Contacts" data-it="Contatti"></h2>
+                <div class="contacts-card" data-aos="fade-up">
+                    <div class="contacts-card-inner">
+                        <p class="contacts-tag">Email</p></div>
+                        <p class="contacts-content">enrico.cavallin@icloud.com</p></div>
+                    </div>
+                </div>
+                    
+                <div class="contacts-card" data-aos="fade-up">
+                    <div class="contacts-card-inner">
+                        <p class="contacts-tag">LinkedIn</p></div>
+                        <a href="index.html"><p class="contacts-content" data-en="My LinkedIn profile" data-it="Il mio profilo LinkedIn"></p></a></div>
+                    </div>
+                </div>
+            </header>
+            <nav class="topbar">
+                <button class="nav-btn" onclick="window.location.href='index.html'" id="nav-home-btn">HOME</button>
+                <button class="nav-btn" onclick="window.location.href='aboutme.html'" data-en="About me" data-it="Chi sono"></button>
+                <button class="nav-btn" onclick="window.location.href='work.html'" data-en="Working experience" data-it="Esperienza lavorativa"></button>
+                <button class="nav-btn" onclick="window.location.href='education.html'" data-en="Education" data-it="Istruzione"></button>
+                <button class="nav-btn" onclick="window.location.href='skills.html'" data-en="Skills" data-it="Competenze"></button>
+                <button class="nav-btn" onclick="window.location.href='certificates.html'" data-en="Certificates" data-it="Certificati"></button>
+                <button class="nav-btn" onclick="window.location.href='projects.html'" data-en="Projects" data-it="Progetti"></button>
+                <button class="nav-btn" onclick="window.location.href='downloads.html'" data-en="My Documents" data-it="Documenti"></button>
+            </nav>
+        </section>
+
+        <section class="footer">
+            <p data-en="&copy; 2025 Cavallin Enrico. All rights reserved." data-it="&copy; 2025 Cavallin Enrico. Tutti i diritti riservati."></p>
+        </section>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+            duration: 1000,
+            once: true
+            });
+        </script>
+        <script src="assets/script.js"></script>
+    </body>
+
+</html>

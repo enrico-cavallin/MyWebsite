@@ -15,7 +15,7 @@ html {
 }
 
 .hero {
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(135deg, rgb(0, 28, 52), rgb(0, 42, 52));
     display: flex;
     position: relative;
@@ -145,7 +145,7 @@ header p {
     flex-direction: column;
     text-align: center;
     margin-bottom: 20px;
-    animation: fadeIn .8s ease-in;
+    animation: bounce 1.5s infinite;
 }
 
 @keyframes fadeIn {
@@ -158,14 +158,20 @@ header p {
     margin-bottom: 8px;
     font-family: 'Cascadia Code', sans-serif;
     font-weight: 300;
-    animation: bounce 1.5s infinite;
+    transition: opacity 0.7s ease;
 }
 
 .scroll-down {
     font-size: 2rem;
     cursor: pointer;
     animation: bounce 1.5s infinite;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.7s ease;
+}
+
+.scroll-down-regularbounce {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: opacity 0.7s ease;
 }
 
 @keyframes bounce {
@@ -283,4 +289,50 @@ h3 {
     font-size: 1rem;
     margin-bottom: 20px;
     color: white;
+}
+
+#more-about-me-paragraph {
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* ====== Contacts Section ====== */
+
+#contacts-header {
+    margin-bottom: 30px;
+}
+
+.contacts-card {
+    background: rgb(220, 220, 220);
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.144);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.contacts-tag {
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: rgb(0, 2, 36);
+}
+
+.contacts-content {
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(0, 2, 36);
+    text-align: center;
+    text-underline-position: under;
+}
+
+#branding-profile {
+    margin-bottom: 50px;
 }
