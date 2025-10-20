@@ -143,11 +143,11 @@ header p {
         padding: 12px 10px;
     }
     .hero-lower {
-        margin-top: 20%;
+        margin-top: 15%;
     }
 }
 
-@media (max-width: 480px) { /* Mobile Phones */
+@media (max-width: 1300px) { /* Mobile Phones */
     .hero {
         height: 80%;
     }
@@ -383,6 +383,7 @@ h3 {
     margin-bottom: 20px;
 
 }
+
 
 
 
