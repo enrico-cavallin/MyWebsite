@@ -146,7 +146,7 @@ header p {
 
 @media (max-width: 1300px) { /* Mobile Phones */
     .hero {
-        height: 80%;
+        height: 100%;
     }
     .hero h1 {
         font-size: 1.8rem;
@@ -380,6 +380,7 @@ h3 {
     margin-bottom: 20px;
 
 }
+
 
 
 
