@@ -155,7 +155,7 @@ header p {
         margin: 10px;
     }
     .hero {
-        margin-top: 70%;
+        margin-top: 80%;
     }
 }
 
@@ -172,7 +172,7 @@ header p {
         margin: 8px;
     }
     .hero {
-        margin-top: 100%;
+        margin-top: 90%;
     }
 }
 
@@ -357,6 +357,19 @@ h3 {
     margin-bottom: 20px;
 }
 
+.contacts-card-wider {
+    background: rgb(220, 220, 220);
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.144);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px 10px  50px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
 .contacts-tag {
     font-family: 'Cascadia Code', sans-serif;
     font-weight: 800;
@@ -376,4 +389,8 @@ h3 {
 
 #branding-profile {
     margin-bottom: 50px;
+}
+
+.header-title {
+    margin-bottom: 20px;
 }
