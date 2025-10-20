@@ -142,6 +142,9 @@ header p {
         font-size: 0.8rem;
         padding: 12px 10px;
     }
+    .hero-lower {
+        margin-bottom: 5%;
+    }
 }
 
 @media (max-width: 480px) { /* Mobile Phones */
@@ -380,3 +383,4 @@ h3 {
     margin-bottom: 20px;
 
 }
+
