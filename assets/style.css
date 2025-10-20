@@ -142,11 +142,8 @@ header p {
         font-size: 0.8rem;
         padding: 12px 10px;
     }
-    .hero {
-        margin-top: 70%;
-    }
     .hero-lower {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 }
 
