@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.hero-lower {
+    height: 100%;
+}
+
 .hero {
     height: 100%;
     background: linear-gradient(135deg, rgb(0, 28, 52), rgb(0, 42, 52));
