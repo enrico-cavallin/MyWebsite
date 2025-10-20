@@ -126,7 +126,7 @@ header p {
 
 /* ====== Responsive Design ====== */
 
-@media (max-width: 1200px) { /* iPads and small laptops */
+@media (max-width: 1500px) { /* iPads and small laptops */
     .hero-lower {
         margin-top: 15%;
     }
