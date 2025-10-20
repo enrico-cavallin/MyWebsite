@@ -127,8 +127,8 @@ header p {
 /* ====== Responsive Design ====== */
 
 @media (max-width: 2200px) { /* iPads*/
-    .hero {
-        margin-top: 10%;
+    .hero-lower {
+        margin-top: 30%;
     }
 }
 
