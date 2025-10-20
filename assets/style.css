@@ -141,7 +141,8 @@ header p {
         margin-top: 50%;
     }
     .hero-lower {
-        margin-top: 70%
+        margin-top: 70%;
+        margin-bottom: 20%;
     }
 }
 
@@ -161,7 +162,8 @@ header p {
         margin-top: 80%;
     }
     .hero-lower {
-        margin-top: 100%
+        margin-top: 100%;
+        margin-bottom: 20%; 
     }
 }
 
@@ -181,7 +183,8 @@ header p {
         margin-top: 90%;
     }
     .hero-lower {
-        margin-top: 120%
+        margin-top: 120%;
+        margin-bottom: 20%;
     }
 }
 
