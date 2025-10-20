@@ -140,6 +140,9 @@ header p {
     .hero {
         margin-top: 50%;
     }
+    .hero-lower {
+        margin-top: 70%
+    }
 }
 
 @media (max-width: 480px) {
@@ -157,6 +160,9 @@ header p {
     .hero {
         margin-top: 80%;
     }
+    .hero-lower {
+        margin-top: 100%
+    }
 }
 
 @media (max-width: 320px) {
@@ -173,6 +179,9 @@ header p {
     }
     .hero {
         margin-top: 90%;
+    }
+    .hero-lower {
+        margin-top: 120%
     }
 }
 
