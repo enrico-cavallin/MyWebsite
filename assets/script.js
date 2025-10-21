@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index === 1) {
           hero.style.height = "150%";
         } else {
-          hero.style.height = "110%";
+          hero.style.height = "130%";
         }
       }
     });
