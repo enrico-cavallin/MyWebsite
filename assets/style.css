@@ -19,7 +19,7 @@ html {
 }
 
 .hero-lower-education {
-    height: 110%;
+    height: 130%;
 }
 
 
@@ -149,6 +149,9 @@ header p {
     }
     .hero-lower {
         margin-top: 7%;
+    }
+    .tab-switcher {
+       padding-top: 20%;
     }
 }
 
@@ -411,7 +414,7 @@ h3 {
 .tab-switcher {
     justify-content: center;
     align-items: start;
-    padding-top: 20%; /* spacing under navbar */
+    padding-top: 5%; /* spacing under navbar */
     min-height: 100vh;
 }
 
