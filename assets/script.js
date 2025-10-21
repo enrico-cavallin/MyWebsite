@@ -128,6 +128,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const tabs = document.querySelectorAll(".tab-btn");
   const underline = document.querySelector(".switch-underline");
   const contents = document.querySelectorAll(".content");
+  const hero = document.querySelector(".hero-lower-education");
+  const smallerScreenDetect = window.matchMedia("(max-width: 1800px)").matches;
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", function() {
@@ -140,6 +142,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
       underline.style.transform = `translateX(${index * 100}%)`;
 
+      if (smallerScreenDetect && hero) {
+        if (index === 1) {
+          hero.style.height = "150%";
+        } else {
+          hero.style.height = "130%";
+        }
+      }
     });
   });
 });
