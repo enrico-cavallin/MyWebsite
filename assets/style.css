@@ -383,3 +383,171 @@ h3 {
     margin-bottom: 20px;
 
 }
+
+.link-btn {
+    background: rgba(0, 28, 52, 0.603);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.link-btn:hover {
+    background: rgba(0, 28, 52);
+    transform: scale(1.05);
+}
+
+/* ====== Tab Switcher ====== */
+.tab-switcher {
+    justify-content: center;
+    align-items: start;
+    padding-top: 120px; /* spacing under navbar */
+    min-height: 100vh;
+}
+
+.switcher {
+    width: 100%;
+    border-radius: 20px;
+    padding: 2rem 0 4rem 0;
+}
+
+.switcher-tabs {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.tab-btn {
+    flex: 1;
+    text-align: center;
+    background: transparent;
+    border: none;
+    gap: 10rem;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: white;
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 300;
+}
+
+.tab-btn:hover {
+  animation: zoomIn 0.3s forwards;
+}
+
+.tab-btn:not(:hover) {
+    animation: zoomOut 0.3s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.switch-underline {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.switcher-content {
+    margin-top: 2rem;
+    color: white;
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skills-card {
+    background: rgb(220, 220, 220);
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.144);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 3px 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.skills-card:hover{
+    transform: scale(1.02);
+    animation: switchBgColorIn 0.3s forwards;
+}
+
+.skills-card:not(:hover) {
+    animation: switchBgColorOut 0.3s forwards;
+}
+
+@keyframes switchBgColorIn {
+    from { background-color: rgb(220, 220, 220); }
+    to { background-color: rgb(200, 200, 200); }
+}
+
+@keyframes switchBgColorOut {
+    from { background-color: rgb(200, 200, 200); }
+    to { background-color: rgb(220, 220, 220); }
+}
+
+.skills-card-theorical {
+    background: rgb(220, 220, 220);
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.144);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 0px 30px;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.skills-card-theorical:hover{
+    transform: scale(1.02);
+    animation: switchBgColorIn 0.3s forwards;
+}
+
+.skills-card-theorical:not(:hover) {
+    animation: switchBgColorOut 0.3s forwards;
+}

@@ -122,3 +122,23 @@ if (resBtn) {
   // Update button whenever language changes
   document.addEventListener("langChanged", updateResButton);
 }
+
+// === Tab Switcher ===
+document.addEventListener("DOMContentLoaded", function() {
+  const tabs = document.querySelectorAll(".tab-btn");
+  const underline = document.querySelector(".switch-underline");
+  const contents = document.querySelectorAll(".content");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", function() {
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      tab.classList.add("active");
+      const target = document.getElementById(tab.dataset.target);
+      target.classList.add("active");
+
+      underline.style.transform = `translateX(${index * 100}%)`;
+    });
+  });
+});
