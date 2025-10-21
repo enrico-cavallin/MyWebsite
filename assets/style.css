@@ -19,7 +19,7 @@ html {
 }
 
 .hero-lower-education {
-    height: 150%;
+    height: 120%;
 }
 
 
@@ -152,6 +152,8 @@ header p {
     }
     .tab-switcher {
        padding-top: 20%;
+    }.hero-lower-education {
+        height: 150%;
     }
 }
 

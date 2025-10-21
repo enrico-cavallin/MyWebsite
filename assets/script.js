@@ -142,13 +142,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
       underline.style.transform = `translateX(${index * 100}%)`;
 
-      if (smallerScreenDetect && hero) {
-        if (index === 1) {
-          hero.style.height = "150%";
-        } else {
-          hero.style.height = "150%";
-        }
-      }
+      //if (smallerScreenDetect && hero) {
+      //  if (index === 1) {
+      //    hero.style.height = "150%";
+      //  } else {
+      //    hero.style.height = "150%";
+      //  }
+      //}
     });
   });
 });
