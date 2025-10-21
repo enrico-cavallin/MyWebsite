@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if (hero) {
         if (index === 1) {
-          hero.style.height = "130%";
+          hero.style.height = "150%";
         } else {
           hero.style.height = "110%";
         }
