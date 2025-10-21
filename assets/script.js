@@ -109,7 +109,7 @@ if (resBtn) {
     const lang = localStorage.getItem("lang") || "en";
 
     // Set the correct PDF based on language
-    const resFile = lang === "it" ? "../documents.html" : "assets/downloads/resume_en.pdf";
+    const resFile = lang === "it" ? "../downloads.html" : "assets/downloads/resume.pdf";
     resBtn.onclick = () => {
       window.location.href = resFile; // triggers download
     };
@@ -122,3 +122,4 @@ if (resBtn) {
   // Update button whenever language changes
   document.addEventListener("langChanged", updateResButton);
 }
+
