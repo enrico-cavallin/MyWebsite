@@ -84,7 +84,7 @@ if(window.matchMedia("(max-width: 1200px)").matches && window.location.pathname.
 
   document.addEventListener("firstTabSelected", function(){
     const hero = document.querySelector(".hero");
-    hero.style.height="120%"
+    hero.style.height="110%"
   });
 }
 
