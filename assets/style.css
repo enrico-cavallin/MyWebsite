@@ -131,7 +131,6 @@ header p {
 
 /* ====== Responsive Design ====== */
 
-
 @media (max-width: 1800px) { /* Tablets and small devices */
     .hero h1 {
         font-size: 2.2rem;
@@ -336,7 +335,8 @@ h3 {
 #more-about-me-paragraph {
     font-family: 'Cascadia Code', sans-serif;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 #start-of-aboutme {
