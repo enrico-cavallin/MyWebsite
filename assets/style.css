@@ -561,3 +561,59 @@ h3 {
 .skills-card-theorical:not(:hover) {
     animation: switchBgColorOut 0.3s forwards;
 }
+
+.p-withHover {
+    padding: 2px 0;
+}
+
+.p-withHover:hover{
+    animation: zoomIn 0.3s forwards;
+    font-weight: 400;
+}
+
+.p-withHover:not(:hover) {
+    animation: zoomOut 0.3s forwards;
+    font-weight: 300;
+}
+
+.soft-skills {
+    height: 100vh;
+    flex: 1;
+    background: linear-gradient(45deg, rgb(0, 28, 52), rgb(0, 42, 52));
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.soft-skills p {
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.scroll-prompt-skills {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-prompt-skills p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-family: 'Cascadia Code', sans-serif;
+    font-weight: 300;
+    transition: opacity 0.7s ease;
+}
+
+.h3-withHover:hover{
+    animation: zoomIn 0.3s forwards;
+}
+
+.h3-withHover:not(:hover) {
+    animation: zoomOut 0.3s forwards;
+}

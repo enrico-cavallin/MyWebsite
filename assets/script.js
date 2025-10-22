@@ -76,7 +76,6 @@ if (scrollArrow && nextSection) {
     }
   });
 }
-
 // === CV Button Dynamic Download ===
 const cvBtn = document.getElementById("download-CV-qb");
 
@@ -124,31 +123,62 @@ if (resBtn) {
 }
 
 // === Tab Switcher ===
-document.addEventListener("DOMContentLoaded", function() {
+
+function setupTabs() {
   const tabs = document.querySelectorAll(".tab-btn");
   const underline = document.querySelector(".switch-underline");
   const contents = document.querySelectorAll(".content");
-  const hero = document.querySelector(".hero-lower-education");
-  const smallerScreenDetect = window.matchMedia("(max-width: 1800px)").matches;
 
   tabs.forEach((tab, index) => {
-    tab.addEventListener("click", function() {
+    tab.addEventListener("click", () => {
       tabs.forEach(t => t.classList.remove("active"));
       contents.forEach(c => c.classList.remove("active"));
 
       tab.classList.add("active");
       const target = document.getElementById(tab.dataset.target);
-      target.classList.add("active");
+      if (target) target.classList.add("active");
 
-      underline.style.transform = `translateX(${index * 100}%)`;
-
-      //if (smallerScreenDetect && hero) {
-      //  if (index === 1) {
-      //    hero.style.height = "150%";
-      //  } else {
-      //    hero.style.height = "150%";
-      //  }
-      //}
+      if (underline) underline.style.transform = `translateX(${index * 100}%)`;
+      document.dispatchEvent((index === 1 ? new Event("secondTabSelected") : new Event("firstTabSelected")))
     });
   });
+}
+
+document.addEventListener("DOMContentLoaded", setupTabs);
+document.addEventListener("DOMContentLoaded", function(){
+  document.dispatchEvent(new Event("firstTabSelected"));
+});
+
+document.dispatchEvent(new Event("firstTabSelected"))
+// Select the arrow and second section
+const scrollArrowSkills = document.getElementById("scrollArrowSkills");
+const SkillsSection = document.querySelector(".soft-skills");
+const scrollTextSkills = document.querySelector(".scroll-prompt-skills p");
+const wholePromptSkills = document.querySelector(".scroll-prompt-skills");
+document.addEventListener("firstTabSelected", () => {
+  wholePromptSkills.style.display = "flex";
+  SkillsSection.style.display = "flex";
+    // Scroll smoothly when arrow is clicked
+  scrollArrowSkills.addEventListener("click", () => {
+    SkillsSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  // Hide arrow when scrolling down, show when at top
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) { // small threshold
+      scrollArrowSkills.style.opacity = "0";
+      scrollArrowSkills.style.pointerEvents = "none";
+      scrollTextSkills.style.opacity = "0";
+      scrollTextSkills.style.pointerEvents = "none";
+    } else {
+      scrollArrowSkills.style.opacity = "1";
+      scrollArrowSkills.style.pointerEvents = "auto";
+      scrollTextSkills.style.opacity = "1";
+      scrollTextSkills.style.pointerEvents = "auto";
+    }
+  });
+});
+document.addEventListener("secondTabSelected", () => {
+  wholePromptSkills.style.display = "none";
+  SkillsSection.style.display = "none";
 });
