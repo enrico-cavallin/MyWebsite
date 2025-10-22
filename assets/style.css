@@ -159,7 +159,10 @@ header p {
 
 @media (max-width: 1200px) { /* Mobile Phones */
     .hero {
-        height: 150%;
+        height: 130%;
+    }
+    .hero-lower-education {
+        height: 130%;
     }
     .hero h1 {
         font-size: 1.8rem;
