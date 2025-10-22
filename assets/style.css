@@ -156,6 +156,9 @@ header p {
     .hero {
         height: 100%;
     }
+    .header {
+        padding: 50px 20px;
+    }
 }
 
 @media (max-width: 1200px) { /* Mobile Phones */
