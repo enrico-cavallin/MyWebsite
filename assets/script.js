@@ -76,6 +76,18 @@ if (scrollArrow && nextSection) {
     }
   });
 }
+if(window.matchMedia("(max-width: 1200px)").matches && window.location.pathname.endsWith("education.html")) {
+  document.addEventListener("secondTabSelected", function(){
+    const hero = document.querySelector(".hero");
+    hero.style.height="120%"
+  });
+
+  document.addEventListener("firstTabSelected", function(){
+    const hero = document.querySelector(".hero");
+    hero.style.height="100%"
+  });
+}
+
 // === CV Button Dynamic Download ===
 const cvBtn = document.getElementById("download-CV-qb");
 
@@ -182,3 +194,15 @@ document.addEventListener("secondTabSelected", () => {
   wholePromptSkills.style.display = "none";
   SkillsSection.style.display = "none";
 });
+
+if(window.matchMedia("(max-width: 1200px)").matches && window.location.pathname.endsWith("skills.html")) {
+  document.addEventListener("secondTabSelected", function(){
+    const hero = document.querySelector(".hero");
+    hero.style.height="110%"
+  });
+
+  document.addEventListener("firstTabSelected", function(){
+    const hero = document.querySelector(".hero");
+    hero.style.height="100%"
+  });
+}

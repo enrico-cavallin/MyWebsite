@@ -157,16 +157,16 @@ header p {
         height: 100%;
     }
     .header {
-        padding: 50px 20px;
+        padding: 200px 20px;
     }
 }
 
 @media (max-width: 1200px) { /* Mobile Phones */
     .hero {
-        height: 130%;
+        height: 100%;
     }
     .hero-lower-education {
-        height: 130%;
+        height: 110%;
     }
     .hero h1 {
         font-size: 1.8rem;
@@ -448,6 +448,7 @@ h3 {
     gap: 10rem;
     padding: 1rem 0;
     font-size: 1.1rem;
+    width: 300px;
     cursor: pointer;
     transition: color 0.3s ease;
     color: white;
