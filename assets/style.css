@@ -154,10 +154,7 @@ header p {
        padding-top: 20%;
     }
     .hero {
-        height: 80%;
-    }
-    .hero-lower-education {
-        height: 130%;
+        height: 100%;
     }
 }
 
