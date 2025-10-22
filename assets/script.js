@@ -84,7 +84,7 @@ if(window.matchMedia("(max-width: 1200px)").matches && window.location.pathname.
 
   document.addEventListener("firstTabSelected", function(){
     const hero = document.querySelector(".hero");
-    hero.style.height="100%"
+    hero.style.height="120%"
   });
 }
 
@@ -198,11 +198,11 @@ document.addEventListener("secondTabSelected", () => {
 if(window.matchMedia("(max-width: 1200px)").matches && window.location.pathname.endsWith("skills.html")) {
   document.addEventListener("secondTabSelected", function(){
     const hero = document.querySelector(".hero");
-    hero.style.height="110%"
+    hero.style.height="120%"
   });
 
   document.addEventListener("firstTabSelected", function(){
     const hero = document.querySelector(".hero");
-    hero.style.height="100%"
+    hero.style.height="120%"
   });
 }
